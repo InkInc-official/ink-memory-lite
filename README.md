@@ -65,6 +65,27 @@ streamlit run main.py
 
 ---
 
+## ⚠️ データ保存について
+
+本ツールのデータは **ローカルのSQLiteファイル** に保存されます。
+
+```
+~/.local/share/ink_memory_lite/ink_memory_lite.db
+```
+
+**ブラウザのキャッシュやクラウドとは無関係**のため、ローカル起動であればデータが消えることはありません。
+
+### Streamlit Cloud版（デモURL）について
+
+[https://ink-memory-lite-app.streamlit.app](https://ink-memory-lite-app.streamlit.app) は**お試し・動作確認用**です。
+
+- 入力したデータはサーバー再起動時に**消える可能性があります**
+- 一定時間アクセスがないとスリープ状態になります（画面の指示に従って再起動できます）
+
+**実際の活動ログ管理はローカル起動での運用を強く推奨します。**
+
+---
+
 ## 技術スタック
 
 | 項目 | 内容 |
